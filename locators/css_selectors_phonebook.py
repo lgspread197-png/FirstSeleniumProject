@@ -4,8 +4,8 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 try:
-    # driver.get("https://telranedu.web.app/login")
-    driver.get("https://icarro-v1.netlify.app/search?page=0&size=10")
+    driver.get("https://telranedu.web.app/login")
+    # driver.get("https://icarro-v1.netlify.app/search?page=0&size=10")
     #by TAG_NAME
     div = driver.find_elements(By.TAG_NAME,"div")
     print(len(div))
@@ -41,8 +41,8 @@ try:
     name = driver.find_element(By.CSS_SELECTOR,"input[name=\"email\"]")
     email = driver.find_element(By.CSS_SELECTOR,"input[name=\"email\"]")
 
-    subtitle = driver.find_element(By.CSS_SELECTOR,"[Type your data and hit Yalla!]")
-    start_sub = driver.find_element(By.CSS_SELECTOR,)
+    # subtitle = driver.find_element(By.CSS_SELECTOR,"[Type your data and hit Yalla!]")
+    # start_sub = driver.find_element(By.CSS_SELECTOR,)
 
 finally:
     driver.quit()
