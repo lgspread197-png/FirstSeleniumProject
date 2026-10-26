@@ -16,6 +16,8 @@ try:
     print(len(ul))
     input = driver.find_elements(By.CSS_SELECTOR, "input")
     print(len(input))
+    hrev = driver.find_elements(By.CSS_SELECTOR, 'a[href="/books"]')
+    print(len(hrev))
     a_ = driver.find_elements(By.CSS_SELECTOR, "a")
     print(len(a_))
     script = driver.find_elements(By.TAG_NAME, "script")
