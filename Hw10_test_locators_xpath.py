@@ -39,6 +39,10 @@ try:
 
     image = driver.find_element(By.XPATH,"//div[@class='picture']//img[@title='Show details for Build your own cheap computer']")
     javascript = driver.find_element(By.XPATH,"//body[1]/div[4]/div[1]/script[1]")
+    li = driver.find_element(By.XPATH,"//li/parent::*")
+    li_2 = driver.find_element(By.XPATH,"(//li[@class='answer'])[1]")
+    h2 = driver.find_element(By.XPATH,"(//h2)[4]")
+
 
 finally:
     driver.quit()
